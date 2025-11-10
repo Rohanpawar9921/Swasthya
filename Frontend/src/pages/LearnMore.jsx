@@ -314,7 +314,34 @@ function LearnMore() {
 
       {/* Footer */}
       <footer className="footer glass">
-        <p>© 2025 Swasthya. Committed to cleaner air and healthier communities.</p>
+        <div className="footer-content-learn">
+          <div className="footer-section-learn">
+            <h4>Swasthya</h4>
+            <p>Real-time air quality monitoring and health impact analysis platform for a healthier tomorrow.</p>
+          </div>
+          <div className="footer-section-learn">
+            <h4>Quick Links</h4>
+            <Link to="/">Home</Link>
+            <Link to="/dashboard">Dashboard</Link>
+            <Link to="/learn-more">Learn More</Link>
+            <Link to="/login">Login</Link>
+          </div>
+          <div className="footer-section-learn">
+            <h4>Resources</h4>
+            <a href="https://www.who.int/health-topics/air-pollution" target="_blank" rel="noopener noreferrer">WHO Guidelines</a>
+            <a href="https://www.epa.gov/air-quality" target="_blank" rel="noopener noreferrer">EPA Standards</a>
+            <a href="https://cpcb.nic.in/" target="_blank" rel="noopener noreferrer">CPCB India</a>
+          </div>
+          <div className="footer-section-learn">
+            <h4>Contact</h4>
+            <p>📧 support@swasthya.com</p>
+            <p>📞 +91 123 456 7890</p>
+            <p>📍 Mumbai, India</p>
+          </div>
+        </div>
+        <div className="footer-bottom-learn">
+          <p>© 2025 Swasthya. All rights reserved. Committed to cleaner air and healthier communities.</p>
+        </div>
       </footer>
     </div>
   );

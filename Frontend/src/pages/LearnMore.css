@@ -421,13 +421,59 @@
 .footer {
   position: relative;
   z-index: 1;
-  padding: 30px;
-  text-align: center;
-  margin: 40px 20px 30px;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 50px 60px 30px;
+  margin: 80px auto 0;
+  max-width: 1400px;
+}
+
+.footer-content-learn {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.footer-section-learn h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  background: linear-gradient(45deg, #60a5fa, #a78bfa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.footer-section-learn p {
+  font-size: 14px;
   opacity: 0.8;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.footer-section-learn a {
+  display: block;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-size: 14px;
+  margin-bottom: 10px;
+  transition: all 0.3s;
+}
+
+.footer-section-learn a:hover {
+  color: #60a5fa;
+  transform: translateX(5px);
+}
+
+.footer-bottom-learn {
+  text-align: center;
+  padding-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-bottom-learn p {
+  font-size: 14px;
+  opacity: 0.7;
+  margin: 0;
 }
 
 /* Animations */

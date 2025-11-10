@@ -362,6 +362,36 @@ function Dashboard() {
           </ResponsiveContainer>
         </div>
       </section>
+
+      {/* Footer */}
+      <footer className="dashboard-footer glass">
+        <div className="footer-content">
+          <div className="footer-section">
+            <h4>Swasthya</h4>
+            <p>Real-time air quality monitoring and health impact analysis platform</p>
+          </div>
+          <div className="footer-section">
+            <h4>Quick Links</h4>
+            <Link to="/">Home</Link>
+            <Link to="/learn-more">Learn More</Link>
+            <Link to="/dashboard">Dashboard</Link>
+          </div>
+          <div className="footer-section">
+            <h4>Resources</h4>
+            <a href="https://www.who.int/health-topics/air-pollution" target="_blank" rel="noopener noreferrer">WHO Air Quality</a>
+            <a href="https://www.epa.gov/air-quality" target="_blank" rel="noopener noreferrer">EPA Standards</a>
+            <a href="https://cpcb.nic.in/" target="_blank" rel="noopener noreferrer">CPCB India</a>
+          </div>
+          <div className="footer-section">
+            <h4>Contact</h4>
+            <p>📧 support@swasthya.com</p>
+            <p>📞 +91 123 456 7890</p>
+          </div>
+        </div>
+        <div className="footer-bottom">
+          <p>&copy; 2025 Swasthya. All rights reserved. | Built for a healthier tomorrow</p>
+        </div>
+      </footer>
     </div>
   );
 }
