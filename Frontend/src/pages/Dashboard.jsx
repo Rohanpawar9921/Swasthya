@@ -249,7 +249,15 @@ function Dashboard() {
       {/* Charts */}
       <section className="charts-section">
         <div className="chart-container glass">
-          <h3>AQI Trend</h3>
+          <div className="chart-header">
+            <h3>AQI Trend</h3>
+            <button 
+              className="btn-learn"
+              onClick={() => navigate('/charts/aqi-trend')}
+            >
+              📚 Learn About This Chart
+            </button>
+          </div>
           <ResponsiveContainer width="100%" height={300}>
             <LineChart data={sensorData.reverse()}>
               <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.1)" />
@@ -281,7 +289,15 @@ function Dashboard() {
         </div>
 
         <div className="chart-container glass">
-          <h3>Pollutants Comparison</h3>
+          <div className="chart-header">
+            <h3>Pollutants Comparison</h3>
+            <button 
+              className="btn-learn"
+              onClick={() => navigate('/charts/pollutants')}
+            >
+              📚 Learn About This Chart
+            </button>
+          </div>
           <ResponsiveContainer width="100%" height={300}>
             <BarChart data={sensorData.slice(0, 5)}>
               <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.1)" />
@@ -311,7 +327,15 @@ function Dashboard() {
         </div>
 
         <div className="chart-container glass full-width">
-          <h3>Health Impact Analysis</h3>
+          <div className="chart-header">
+            <h3>Health Impact Analysis</h3>
+            <button 
+              className="btn-learn"
+              onClick={() => navigate('/charts/health-impact')}
+            >
+              📚 Learn About This Chart
+            </button>
+          </div>
           <ResponsiveContainer width="100%" height={300}>
             <LineChart data={sensorData}>
               <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.1)" />
