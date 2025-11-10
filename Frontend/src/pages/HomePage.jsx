@@ -1,7 +1,16 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { useAuth } from '../context/AuthContext';
 import './HomePage.css';
 
 function HomePage() {
+  const { isAuthenticated, user, logout } = useAuth();
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    logout();
+    navigate('/');
+  };
+
   return (
     <div className="homepage">
       {/* Animated background */}
@@ -21,7 +30,16 @@ function HomePage() {
           <div className="nav-links">
             <Link to="/" className="nav-link">Home</Link>
             <Link to="/dashboard" className="nav-link">Dashboard</Link>
-            <button className="btn-glass">Get Started</button>
+            {isAuthenticated ? (
+              <>
+                <span className="user-badge">
+                  👤 {user?.name} ({user?.role})
+                </span>
+                <button onClick={handleLogout} className="btn-glass">Logout</button>
+              </>
+            ) : (
+              <Link to="/login" className="btn-glass">Login</Link>
+            )}
           </div>
         </div>
       </nav>

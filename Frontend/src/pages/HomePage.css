@@ -174,6 +174,19 @@
   transform: translateY(-2px);
 }
 
+.user-badge {
+  padding: 8px 16px;
+  background: rgba(99, 102, 241, 0.2);
+  border: 1px solid rgba(99, 102, 241, 0.4);
+  border-radius: 30px;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
 /* Hero Section */
 .hero {
   position: relative;

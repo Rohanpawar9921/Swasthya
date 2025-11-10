@@ -1,15 +1,23 @@
 import { useState, useEffect } from 'react';
 import { LineChart, Line, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { useAuth } from '../context/AuthContext';
 import './Dashboard.css';
 
 function Dashboard() {
+  const { isAuthenticated, user, logout } = useAuth();
+  const navigate = useNavigate();
   const [sensorData, setSensorData] = useState([]);
   const [latestData, setLatestData] = useState(null);
   const [stats, setStats] = useState(null);
   const [loading, setLoading] = useState(true);
 
   const API_URL = 'http://localhost:5000/api/sensor-data';
+
+  const handleLogout = () => {
+    logout();
+    navigate('/');
+  };
 
   useEffect(() => {
     fetchData();
@@ -77,9 +85,19 @@ function Dashboard() {
       <header className="dashboard-header glass">
         <div className="header-content">
           <Link to="/" className="back-link">← Back to Home</Link>
-          <div className="live-indicator">
-            <span className="pulse-dot"></span>
-            <span>Live Data</span>
+          <div className="header-right">
+            {isAuthenticated && (
+              <div className="user-info">
+                <span className="user-badge">
+                  👤 {user?.name} ({user?.role})
+                </span>
+                <button onClick={handleLogout} className="btn-logout">Logout</button>
+              </div>
+            )}
+            <div className="live-indicator">
+              <span className="pulse-dot"></span>
+              <span>Live Data</span>
+            </div>
           </div>
         </div>
       </header>
