@@ -1,0 +1,270 @@
+{
+  "metadata": {
+    "city": "Delhi",
+    "lastUpdated": "2025-11-10T12:30:00Z",
+    "totalSensors": 15,
+    "activeSensors": 14
+  },
+  "currentReading": {
+    "timestamp": "2025-11-10T12:30:00Z",
+    "airQuality": {
+      "AQI": 287,
+      "PM25": 156.3,
+      "PM10": 287.5,
+      "NO2": 89.2,
+      "SO2": 34.7,
+      "O3": 45.8,
+      "CO": 2.3,
+      "category": "Very Poor",
+      "dominantPollutant": "PM2.5"
+    },
+    "weather": {
+      "temperature": 24.5,
+      "humidity": 68,
+      "windSpeed": 12.3,
+      "pressure": 1013.2,
+      "visibility": 3.2
+    },
+    "healthImpact": {
+      "respiratoryCases": 142,
+      "cardiovascularCases": 87,
+      "hospitalAdmissions": 56,
+      "healthImpactScore": 8.7,
+      "healthImpactClass": "Very High"
+    },
+    "location": {
+      "latitude": 28.6139,
+      "longitude": 77.2090,
+      "zone": "Central Delhi"
+    }
+  },
+  "historicalData": [
+    {
+      "timestamp": "2025-11-10T00:00:00Z",
+      "AQI": 245,
+      "PM25": 132.1,
+      "PM10": 245.2,
+      "NO2": 76.3,
+      "SO2": 28.4,
+      "O3": 38.9,
+      "temperature": 18.2,
+      "humidity": 72,
+      "respiratoryCases": 118,
+      "cardiovascularCases": 71,
+      "hospitalAdmissions": 42
+    },
+    {
+      "timestamp": "2025-11-10T03:00:00Z",
+      "AQI": 268,
+      "PM25": 145.7,
+      "PM10": 268.9,
+      "NO2": 82.1,
+      "SO2": 31.2,
+      "O3": 42.3,
+      "temperature": 19.5,
+      "humidity": 70,
+      "respiratoryCases": 125,
+      "cardiovascularCases": 78,
+      "hospitalAdmissions": 48
+    },
+    {
+      "timestamp": "2025-11-10T06:00:00Z",
+      "AQI": 298,
+      "PM25": 162.4,
+      "PM10": 298.3,
+      "NO2": 91.5,
+      "SO2": 36.8,
+      "O3": 48.1,
+      "temperature": 21.8,
+      "humidity": 66,
+      "respiratoryCases": 138,
+      "cardiovascularCases": 84,
+      "hospitalAdmissions": 53
+    },
+    {
+      "timestamp": "2025-11-10T09:00:00Z",
+      "AQI": 312,
+      "PM25": 171.2,
+      "PM10": 312.7,
+      "NO2": 95.8,
+      "SO2": 38.9,
+      "O3": 51.4,
+      "temperature": 23.4,
+      "humidity": 64,
+      "respiratoryCases": 147,
+      "cardiovascularCases": 89,
+      "hospitalAdmissions": 58
+    },
+    {
+      "timestamp": "2025-11-10T12:00:00Z",
+      "AQI": 287,
+      "PM25": 156.3,
+      "PM10": 287.5,
+      "NO2": 89.2,
+      "SO2": 34.7,
+      "O3": 45.8,
+      "temperature": 24.5,
+      "humidity": 68,
+      "respiratoryCases": 142,
+      "cardiovascularCases": 87,
+      "hospitalAdmissions": 56
+    },
+    {
+      "timestamp": "2025-11-09T00:00:00Z",
+      "AQI": 198,
+      "PM25": 102.3,
+      "PM10": 198.4,
+      "NO2": 62.1,
+      "SO2": 22.3,
+      "O3": 32.7,
+      "temperature": 17.8,
+      "humidity": 75,
+      "respiratoryCases": 89,
+      "cardiovascularCases": 54,
+      "hospitalAdmissions": 31
+    },
+    {
+      "timestamp": "2025-11-09T12:00:00Z",
+      "AQI": 234,
+      "PM25": 125.6,
+      "PM10": 234.1,
+      "NO2": 72.4,
+      "SO2": 26.8,
+      "O3": 37.2,
+      "temperature": 22.1,
+      "humidity": 69,
+      "respiratoryCases": 106,
+      "cardiovascularCases": 65,
+      "hospitalAdmissions": 38
+    },
+    {
+      "timestamp": "2025-11-08T00:00:00Z",
+      "AQI": 176,
+      "PM25": 89.4,
+      "PM10": 176.2,
+      "NO2": 54.7,
+      "SO2": 19.1,
+      "O3": 28.4,
+      "temperature": 16.5,
+      "humidity": 78,
+      "respiratoryCases": 72,
+      "cardiovascularCases": 44,
+      "hospitalAdmissions": 25
+    },
+    {
+      "timestamp": "2025-11-08T12:00:00Z",
+      "AQI": 212,
+      "PM25": 112.8,
+      "PM10": 212.6,
+      "NO2": 67.3,
+      "SO2": 24.5,
+      "O3": 34.9,
+      "temperature": 21.3,
+      "humidity": 71,
+      "respiratoryCases": 95,
+      "cardiovascularCases": 58,
+      "hospitalAdmissions": 34
+    },
+    {
+      "timestamp": "2025-11-07T00:00:00Z",
+      "AQI": 154,
+      "PM25": 76.2,
+      "PM10": 154.3,
+      "NO2": 48.9,
+      "SO2": 16.7,
+      "O3": 25.1,
+      "temperature": 15.9,
+      "humidity": 81,
+      "respiratoryCases": 58,
+      "cardiovascularCases": 35,
+      "hospitalAdmissions": 19
+    }
+  ],
+  "sensorLocations": [
+    {
+      "id": "SENSOR_001",
+      "name": "Central Delhi - Connaught Place",
+      "latitude": 28.6289,
+      "longitude": 77.2065,
+      "status": "active",
+      "lastReading": "2025-11-10T12:30:00Z",
+      "currentAQI": 298
+    },
+    {
+      "id": "SENSOR_002",
+      "name": "South Delhi - Nehru Place",
+      "latitude": 28.5494,
+      "longitude": 77.2501,
+      "status": "active",
+      "lastReading": "2025-11-10T12:30:00Z",
+      "currentAQI": 276
+    },
+    {
+      "id": "SENSOR_003",
+      "name": "North Delhi - Kashmere Gate",
+      "latitude": 28.6673,
+      "longitude": 77.2274,
+      "status": "active",
+      "lastReading": "2025-11-10T12:30:00Z",
+      "currentAQI": 312
+    },
+    {
+      "id": "SENSOR_004",
+      "name": "East Delhi - Anand Vihar",
+      "latitude": 28.6469,
+      "longitude": 77.3158,
+      "status": "active",
+      "lastReading": "2025-11-10T12:30:00Z",
+      "currentAQI": 334
+    },
+    {
+      "id": "SENSOR_005",
+      "name": "West Delhi - Rajouri Garden",
+      "latitude": 28.6414,
+      "longitude": 77.1202,
+      "status": "active",
+      "lastReading": "2025-11-10T12:30:00Z",
+      "currentAQI": 289
+    }
+  ],
+  "alerts": [
+    {
+      "id": "ALERT_001",
+      "severity": "high",
+      "type": "AQI",
+      "message": "Air Quality Index exceeded 300 - Very Poor category",
+      "timestamp": "2025-11-10T09:15:00Z",
+      "zone": "North Delhi"
+    },
+    {
+      "id": "ALERT_002",
+      "severity": "high",
+      "type": "Health",
+      "message": "Respiratory cases increased by 24% in last 6 hours",
+      "timestamp": "2025-11-10T11:45:00Z",
+      "zone": "Central Delhi"
+    },
+    {
+      "id": "ALERT_003",
+      "severity": "medium",
+      "type": "PM2.5",
+      "message": "PM2.5 levels above safe threshold (>150 µg/m³)",
+      "timestamp": "2025-11-10T10:30:00Z",
+      "zone": "East Delhi"
+    }
+  ],
+  "predictions": {
+    "next24Hours": {
+      "averageAQI": 295,
+      "trend": "stable",
+      "peakHours": ["06:00-09:00", "18:00-21:00"],
+      "expectedHealthImpact": "High"
+    },
+    "next7Days": {
+      "averageAQI": 268,
+      "trend": "improving",
+      "bestDay": "2025-11-14",
+      "worstDay": "2025-11-11"
+    }
+  }
+}

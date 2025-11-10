@@ -1,0 +1,218 @@
+[
+  {
+    "timestamp": "2025-11-10T08:00:00Z",
+    "location": {
+      "area": "Central Business District",
+      "coordinates": { "lat": 19.0760, "lng": 72.8777 }
+    },
+    "airQuality": {
+      "AQI": 178,
+      "PM10": 145,
+      "PM25": 89,
+      "NO2": 62,
+      "SO2": 28,
+      "O3": 45
+    },
+    "weather": {
+      "temperature": 32,
+      "humidity": 68,
+      "windSpeed": 12
+    },
+    "healthImpact": {
+      "respiratoryCases": 45,
+      "cardiovascularCases": 23,
+      "hospitalAdmissions": 68,
+      "healthImpactScore": 7.8,
+      "healthImpactClass": "High"
+    }
+  },
+  {
+    "timestamp": "2025-11-10T09:00:00Z",
+    "location": {
+      "area": "Industrial Zone",
+      "coordinates": { "lat": 19.1136, "lng": 72.8697 }
+    },
+    "airQuality": {
+      "AQI": 245,
+      "PM10": 198,
+      "PM25": 125,
+      "NO2": 85,
+      "SO2": 52,
+      "O3": 38
+    },
+    "weather": {
+      "temperature": 34,
+      "humidity": 65,
+      "windSpeed": 8
+    },
+    "healthImpact": {
+      "respiratoryCases": 67,
+      "cardiovascularCases": 38,
+      "hospitalAdmissions": 105,
+      "healthImpactScore": 9.2,
+      "healthImpactClass": "Very High"
+    }
+  },
+  {
+    "timestamp": "2025-11-10T10:00:00Z",
+    "location": {
+      "area": "Residential Area - North",
+      "coordinates": { "lat": 19.2183, "lng": 72.9781 }
+    },
+    "airQuality": {
+      "AQI": 98,
+      "PM10": 78,
+      "PM25": 52,
+      "NO2": 35,
+      "SO2": 15,
+      "O3": 58
+    },
+    "weather": {
+      "temperature": 30,
+      "humidity": 72,
+      "windSpeed": 15
+    },
+    "healthImpact": {
+      "respiratoryCases": 18,
+      "cardiovascularCases": 9,
+      "hospitalAdmissions": 27,
+      "healthImpactScore": 4.5,
+      "healthImpactClass": "Moderate"
+    }
+  },
+  {
+    "timestamp": "2025-11-10T11:00:00Z",
+    "location": {
+      "area": "Highway Junction",
+      "coordinates": { "lat": 19.0825, "lng": 72.7411 }
+    },
+    "airQuality": {
+      "AQI": 205,
+      "PM10": 165,
+      "PM25": 105,
+      "NO2": 78,
+      "SO2": 42,
+      "O3": 41
+    },
+    "weather": {
+      "temperature": 33,
+      "humidity": 66,
+      "windSpeed": 10
+    },
+    "healthImpact": {
+      "respiratoryCases": 52,
+      "cardiovascularCases": 28,
+      "hospitalAdmissions": 80,
+      "healthImpactScore": 8.5,
+      "healthImpactClass": "High"
+    }
+  },
+  {
+    "timestamp": "2025-11-10T12:00:00Z",
+    "location": {
+      "area": "Coastal Area",
+      "coordinates": { "lat": 18.9220, "lng": 72.8347 }
+    },
+    "airQuality": {
+      "AQI": 65,
+      "PM10": 52,
+      "PM25": 35,
+      "NO2": 22,
+      "SO2": 10,
+      "O3": 68
+    },
+    "weather": {
+      "temperature": 29,
+      "humidity": 78,
+      "windSpeed": 22
+    },
+    "healthImpact": {
+      "respiratoryCases": 8,
+      "cardiovascularCases": 4,
+      "hospitalAdmissions": 12,
+      "healthImpactScore": 2.8,
+      "healthImpactClass": "Low"
+    }
+  },
+  {
+    "timestamp": "2025-11-10T13:00:00Z",
+    "location": {
+      "area": "Central Business District",
+      "coordinates": { "lat": 19.0760, "lng": 72.8777 }
+    },
+    "airQuality": {
+      "AQI": 188,
+      "PM10": 152,
+      "PM25": 95,
+      "NO2": 68,
+      "SO2": 32,
+      "O3": 43
+    },
+    "weather": {
+      "temperature": 35,
+      "humidity": 62,
+      "windSpeed": 11
+    },
+    "healthImpact": {
+      "respiratoryCases": 48,
+      "cardiovascularCases": 26,
+      "hospitalAdmissions": 74,
+      "healthImpactScore": 8.1,
+      "healthImpactClass": "High"
+    }
+  },
+  {
+    "timestamp": "2025-11-10T14:00:00Z",
+    "location": {
+      "area": "Park Area",
+      "coordinates": { "lat": 19.0896, "lng": 72.8656 }
+    },
+    "airQuality": {
+      "AQI": 72,
+      "PM10": 58,
+      "PM25": 38,
+      "NO2": 25,
+      "SO2": 12,
+      "O3": 65
+    },
+    "weather": {
+      "temperature": 31,
+      "humidity": 70,
+      "windSpeed": 18
+    },
+    "healthImpact": {
+      "respiratoryCases": 12,
+      "cardiovascularCases": 6,
+      "hospitalAdmissions": 18,
+      "healthImpactScore": 3.2,
+      "healthImpactClass": "Low"
+    }
+  },
+  {
+    "timestamp": "2025-11-10T15:00:00Z",
+    "location": {
+      "area": "Industrial Zone",
+      "coordinates": { "lat": 19.1136, "lng": 72.8697 }
+    },
+    "airQuality": {
+      "AQI": 268,
+      "PM10": 215,
+      "PM25": 142,
+      "NO2": 92,
+      "SO2": 58,
+      "O3": 35
+    },
+    "weather": {
+      "temperature": 36,
+      "humidity": 60,
+      "windSpeed": 7
+    },
+    "healthImpact": {
+      "respiratoryCases": 75,
+      "cardiovascularCases": 42,
+      "hospitalAdmissions": 117,
+      "healthImpactScore": 9.5,
+      "healthImpactClass": "Very High"
+    }
+  }
+]
