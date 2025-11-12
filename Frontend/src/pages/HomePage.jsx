@@ -1,10 +1,13 @@
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
+import { useState } from 'react';
+import HealthInputModal from '../components/HealthInputModal';
 import './HomePage.css';
 
 function HomePage() {
   const { isAuthenticated, user, logout } = useAuth();
   const navigate = useNavigate();
+  const [isHealthModalOpen, setIsHealthModalOpen] = useState(false);
 
   const handleLogout = () => {
     logout();
@@ -63,6 +66,15 @@ function HomePage() {
             <Link to="/learn-more" className="btn-secondary">
               Learn More
             </Link>
+            {/* Report Health Issue button - Only for logged in users/hospitals */}
+            {isAuthenticated && user?.role !== 'government' && (
+              <button 
+                onClick={() => setIsHealthModalOpen(true)}
+                className="btn-report"
+              >
+                📋 Report Health Issue
+              </button>
+            )}
           </div>
 
           {/* Stats Cards */}
@@ -300,6 +312,15 @@ function HomePage() {
           <p>© 2025 Swasthya. All rights reserved. Built for better public health decisions.</p>
         </div>
       </footer>
+
+      {/* Health Input Modal */}
+      <HealthInputModal 
+        isOpen={isHealthModalOpen}
+        onClose={() => setIsHealthModalOpen(false)}
+        onSubmitSuccess={() => {
+          // Modal will auto-close, no need to refresh data on homepage
+        }}
+      />
     </div>
   );
 }

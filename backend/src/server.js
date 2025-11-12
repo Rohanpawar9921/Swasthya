@@ -4,6 +4,7 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import sensorRoutes from './routes/sensorRoutes.js';
 import authRoutes from './routes/authRoutes.js';
+import healthInputRoutes from './routes/healthInputRoutes.js';
 
 dotenv.config();
 
@@ -26,6 +27,7 @@ app.get('/', (req, res) => {
 
 app.use('/api/sensor-data', sensorRoutes);
 app.use('/api/auth', authRoutes);
+app.use('/api/health-input', healthInputRoutes);
 
 // Start Server
 app.listen(PORT, () => {

@@ -11,6 +11,7 @@ function Dashboard() {
   const [latestData, setLatestData] = useState(null);
   const [stats, setStats] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [healthInputStats, setHealthInputStats] = useState(null);
 
   const API_URL = 'http://localhost:5000/api/sensor-data';
 
@@ -28,17 +29,24 @@ function Dashboard() {
 
   const fetchData = async () => {
     try {
-      const [dataRes, statsRes] = await Promise.all([
+      const token = localStorage.getItem('token');
+      
+      const [dataRes, statsRes, healthStatsRes] = await Promise.all([
         fetch(`${API_URL}/latest`),
-        fetch(`${API_URL}/stats`)
+        fetch(`${API_URL}/stats`),
+        fetch('http://localhost:5000/api/health-input/stats', {
+          headers: token ? { 'Authorization': `Bearer ${token}` } : {}
+        })
       ]);
 
       const data = await dataRes.json();
       const statsData = await statsRes.json();
+      const healthStats = await healthStatsRes.json();
 
       setSensorData(data);
       setLatestData(data[0]);
       setStats(statsData);
+      setHealthInputStats(healthStats);
       setLoading(false);
     } catch (error) {
       console.error('Error fetching data:', error);
@@ -148,6 +156,32 @@ function Dashboard() {
           </>
         )}
       </section>
+
+      {/* Health Input Statistics */}
+      {healthInputStats && (
+        <section className="health-stats-section">
+          <div className="section-header">
+            <h2>📋 Health Reports Submitted</h2>
+          </div>
+          <div className="health-stats-grid">
+            <div className="health-stat-card glass">
+              <div className="stat-icon">👥</div>
+              <div className="stat-number">{healthInputStats.userSubmissions || 0}</div>
+              <div className="stat-label">User Reports</div>
+            </div>
+            <div className="health-stat-card glass">
+              <div className="stat-icon">🏥</div>
+              <div className="stat-number">{healthInputStats.hospitalSubmissions || 0}</div>
+              <div className="stat-label">Hospital Reports</div>
+            </div>
+            <div className="health-stat-card glass">
+              <div className="stat-icon">📊</div>
+              <div className="stat-number">{healthInputStats.totalSubmissions || 0}</div>
+              <div className="stat-label">Total Reports</div>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Latest Reading */}
       {latestData && (
